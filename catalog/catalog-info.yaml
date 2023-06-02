@@ -1,0 +1,34 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-sensors-consumer-web
+  description: Spring Sensors
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-sensors'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-sensors-producer
+  description: Spring Sensors
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-sensors'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
